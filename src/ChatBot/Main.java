@@ -31,6 +31,11 @@ public class Main {
                 "\nI was created: " + botinfo.botCreationDate);
         System.out.println("=========================");
 
+        System.out.println("\nPlease, remind me your name :)");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("What a great name you have, " + sc.nextLine());
+
     }
 }
 
