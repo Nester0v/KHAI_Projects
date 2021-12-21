@@ -51,6 +51,17 @@ public class Main {
 
         System.out.println("Your age is " + userAge + " ?" + " Thats a good time to start programming!");
 
+        System.out.println("\n You know that i can count ? I can prove it !" +
+                "\n Enter the number to which I should count");
+        userNumber = sc.nextInt();
+
+        for (int i = 0; i < userNumber; i++) {
+            count = count + 1;
+            System.out.println(count);
+        }
+        System.out.println("See ?");
+
+        
     }
 }
 
