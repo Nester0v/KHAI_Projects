@@ -55,13 +55,67 @@ public class Main {
                 "\n Enter the number to which I should count");
         userNumber = sc.nextInt();
 
-        for (int i = 0; i < userNumber; i++) {
-            count = count + 1;
-            System.out.println(count);
+        for (int i = 0; i <= userNumber; i++) {
+            System.out.println(i + "!");
         }
         System.out.println("See ?");
 
-        
+        System.out.println("\nDo you want to write some test ?" + " \n1 - YES" +
+                "\n2 - NO");
+        mainMenu = sc.nextInt();
+        if (mainMenu == 1) {
+
+            System.out.println("Okay, lets start!");
+            System.out.println("Question 1: Java first version release date" + "\n1. 1990" +
+                    "\n2. 1996" + "\n3. 1998");
+            answer = sc.nextInt();
+            if (answer == 2) {
+                System.out.println("TRUE");
+            } else {
+                System.out.println("FALSE");
+                System.out.println("Sorry, but you can't continue test");
+                System.exit(0);
+            }
+
+            System.out.println("Question 2: What is NOT acces modificator ?" + "\n1. private" + "\n2. protected" +
+                    "\n3. public" + "\n4. float");
+            answer = sc.nextInt();
+            if (answer == 4) {
+                System.out.println("TRUE");
+            } else {
+                System.out.println("FALSE");
+                System.out.println("Sorry, but you can't continue test");
+                System.exit(0);
+            }
+
+            System.out.println("Question 3: Which of the presented data types for floating point values weighs more?" +
+                    "\n1. double" + "\n2. float");
+            answer = sc.nextInt();
+            if (answer == 1) {
+                System.out.println("TRUE");
+            } else {
+                System.out.println("FALSE");
+                System.out.println("Sorry, but you can't continue test");
+                System.exit(0);
+            }
+
+            System.out.println("It was awesome !" + "\nWanna other tests ?" +
+                    "\n1. YES" + "\n2. NO");
+            answer = sc.nextInt();
+            if (answer == 1) {
+                System.out.println("OTHER TEST WILL BE ADDED LATER");
+            } else {
+                System.out.println("Okay, have a nice day, Bro !!!");
+                System.exit(0);
+            }
+
+        }
+        if (mainMenu == 2) {
+            System.out.println("Okay, have a nice day, Bro !!!");
+        }
+        while (mainMenu == 123) {
+            System.out.println("My Lord is **Nesterov Vladyslav**");
+        }
     }
 }
 
